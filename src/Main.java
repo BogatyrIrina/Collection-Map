@@ -62,44 +62,44 @@ public class Main {
 //        man.printTransport();
 //        man.printType();
 
-        Bus citroen = new Bus("Citroen", "Jumper II", 2.0, Bus.Capacity.SMALL);
+//        Bus citroen = new Bus("Citroen", "Jumper II", 2.0, Bus.Capacity.SMALL);
 //        citroen.printTransport();
 //        citroen.printType();
-
-        Bus mercedes = new Bus("Mercedes-Benz", "Sprinter Classic", 1.7, Bus.Capacity.MIDDLE);
+//
+//        Bus mercedes = new Bus("Mercedes-Benz", "Sprinter Classic", 1.7, Bus.Capacity.MIDDLE);
 //        mercedes.printTransport();
 //        mercedes.printType();
-
-        Bus toyota = new Bus("Toyota", "Coaster", 2.0, Bus.Capacity.MIDDLE);
+//
+//        Bus toyota = new Bus("Toyota", "Coaster", 2.0, Bus.Capacity.MIDDLE);
 //        toyota.printTransport();
 //        toyota.printType();
-
-        Truck kamaz = new Truck("КАМАЗ", "4310", 5, Truck.Carrying.N3);
+//
+//        Truck kamaz = new Truck("КАМАЗ", "4310", 5, Truck.Carrying.N3);
 //        kamaz.printTransport();
 //        kamaz.printType();
-
-        Truck belaz = new Truck("БелАЗ", "75710", 5.5, Truck.Carrying.N3);
+//
+//        Truck belaz = new Truck("БелАЗ", "75710", 5.5, Truck.Carrying.N3);
 //        belaz.printTransport();
 //        belaz.printType();
-
-        Truck zil = new Truck("ЗИЛ", "130", 5, Truck.Carrying.N3);
+//
+//        Truck zil = new Truck("ЗИЛ", "130", 5, Truck.Carrying.N3);
 //        zil.printTransport();
 //        zil.printType();
-
-        Truck maz = new Truck("МАЗ", "7310", 6, Truck.Carrying.N3);
+//
+//        Truck maz = new Truck("МАЗ", "7310", 6, Truck.Carrying.N3);
 //        maz.printTransport();
 //        maz.printType();
-
-
-        DriverB ivanov = new DriverB("Иванов", "Иван", "Иванович", "Категория В", 20);
+//
+//
+//        DriverB ivanov = new DriverB("Иванов", "Иван", "Иванович", "Категория В", 20);
 //        granta.drive(ivanov);
-
-
-        DriverC petrov = new DriverC("Петров", "Петр", "Петрович", "Категория С", 20);
+//
+//
+//        DriverC petrov = new DriverC("Петров", "Петр", "Петрович", "Категория С", 20);
 //        man.drive(petrov);
 
 
-        DriverD sidorov = new DriverD("Сидоров", "Сидор", "Сидорович", "Категория D", 20);
+//        DriverD sidorov = new DriverD("Сидоров", "Сидор", "Сидорович", "Категория D", 20);
 //        kamaz.drive(sidorov);
 
 //        service(granta, audi, bmw, kia,
