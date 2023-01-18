@@ -31,14 +31,28 @@ public class Main {
         mechanics.add(new Mechanic("Степан", "Степанов", "Автогарант", MachineTypes.BUS));
         mechanics.add(new Mechanic("Антон", "Антонов", "Автоэкспресс", MachineTypes.TRUCK));
 
-        System.out.println(transports);
+//        System.out.println(transports);
+
+
 
         Map<Transport, Mechanic> TransportMechanicMap = new HashMap<>();
-        for (Transport transport : transports) {
-            for (Mechanic mechanic : mechanics) {
-                TransportMechanicMap.put(transport, mechanic);
-            }
-        }
+
+        Mechanic mechanic1 = new Mechanic("Семен", "Семенов", "Автоплюс", MachineTypes.CAR);
+        Mechanic mechanic2 = new Mechanic("Степан", "Степанов", "Автогарант", MachineTypes.BUS);
+        Mechanic mechanic3 = new Mechanic("Антон", "Антонов", "Автоэкспресс", MachineTypes.TRUCK);
+
+        Transport transport1 = new Car("Lada", "Granta", 1.7, Car.BodyType.SEDAN);
+        Transport transport2 = new Car("Audi", "A8 50 L TDI quattro", 3.0, Car.BodyType.SEDAN);
+        Transport transport3 = new Car("BMW", "Z8", 3.0, Car.BodyType.SEDAN);
+        Transport transport4 = new Car("Kia", "Sportage 4 поколение", 2.4, Car.BodyType.SEDAN);
+
+
+        TransportMechanicMap.put(transport1, mechanic1);
+        TransportMechanicMap.put(transport2, mechanic2);
+        TransportMechanicMap.put(transport3, mechanic3);
+        TransportMechanicMap.put(transport4, mechanic1);
+
+
         System.out.println(TransportMechanicMap);
 
 
