@@ -67,8 +67,7 @@ public class Mechanic {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Mechanic mechanic = (Mechanic) o;
-        return Objects.equals(name, surname) &&
-                Objects.equals(name, surname);
+        return Objects.equals(name, mechanic.name) && Objects.equals(surname, mechanic.surname) && Objects.equals(company, mechanic.company) && machineTypes == mechanic.machineTypes;
     }
 
     @Override
