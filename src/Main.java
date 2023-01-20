@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class Main {
@@ -47,13 +44,31 @@ public class Main {
         Transport transport4 = new Car("Kia", "Sportage 4 поколение", 2.4, Car.BodyType.SEDAN);
 
 
-        TransportMechanicMap.put(transport1, mechanic1);
-        TransportMechanicMap.put(transport2, mechanic2);
-        TransportMechanicMap.put(transport3, mechanic3);
-        TransportMechanicMap.put(transport4, mechanic1);
+//        TransportMechanicMap.put(transport1, mechanic1);
+//        TransportMechanicMap.put(transport2, mechanic2);
+//        TransportMechanicMap.put(transport3, mechanic3);
+//        TransportMechanicMap.put(transport4, mechanic1);
 
 
         System.out.println(TransportMechanicMap);
+
+        Set<Mechanic> mechanicSet = new HashSet<>();
+        mechanicSet.add(new Mechanic("Семен", "Семенов", "Автоплюс", MachineTypes.CAR));
+        mechanicSet.add(new Mechanic("Степан", "Степанов", "Автогарант", MachineTypes.BUS));
+        mechanicSet.add(new Mechanic("Антон", "Антонов", "Автоэкспресс", MachineTypes.TRUCK));
+        mechanicSet.add(new Mechanic("Семен", "Семенов", "Автоплюс", MachineTypes.CAR));
+
+        Iterator<Mechanic> iter = mechanicSet.iterator();
+
+        while (iter.hasNext()) {
+            String next = String.valueOf(iter.next());
+            System.out.println(next);
+
+            if( "TWO".equals(next)) {
+                iter.remove();
+            }
+        }
+
 
 
 //        Car granta = new Car("Lada", "Granta", 1.7, Car.BodyType.SEDAN);
