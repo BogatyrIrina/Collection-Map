@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Car extends Transport<DriverB> implements Competing {
     BodyType bodyType;
 
@@ -84,5 +86,19 @@ public class Car extends Transport<DriverB> implements Competing {
         public String getBodyTypeRus() {
             return bodyTypeRus;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Car car = (Car) o;
+        return bodyType == car.bodyType;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), bodyType);
     }
 }

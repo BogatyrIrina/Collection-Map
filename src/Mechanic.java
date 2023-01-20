@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Mechanic {
     private String name;
     private String surname;
@@ -49,5 +51,27 @@ public class Mechanic {
 
     public void fixTheCar() {
         System.out.println(getName() + " из компании " + getCompany() + "чинит автомобиль");
+    }
+    @Override
+    public String toString() {
+        return "Mechanic.Mechanic{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", company=" + company +'\'' +
+                ", machineTypes=" + machineTypes +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mechanic mechanic = (Mechanic) o;
+        return Objects.equals(name, mechanic.name) && Objects.equals(surname, mechanic.surname) && Objects.equals(company, mechanic.company) && machineTypes == mechanic.machineTypes;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, company, machineTypes);
     }
 }

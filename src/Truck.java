@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Truck extends Transport<DriverD> implements Competing{
 
     Carrying carrying;
@@ -84,5 +86,19 @@ public class Truck extends Transport<DriverD> implements Competing{
         public Double getTo() {
             return To;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Truck truck = (Truck) o;
+        return carrying == truck.carrying;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), carrying);
     }
 }
